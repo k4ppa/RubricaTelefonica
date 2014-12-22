@@ -10,14 +10,26 @@
 </head>
 <body ng-controller="ContactListCtrl">
 
-    <ul>
-        <li ng-repeat="contact in contacts">
-            <p>{{contact.firstName}}</p>
-            <p>{{contact.lastName}}</p>
-            <p>{{contact.phoneNumber}}</p>
-        </li>
-    </ul>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+
+            Search: <input ng-model="query">
+
+        </div>
+        <div class="col-md-10">
+
+            <ul class="phones">
+                <li ng-repeat="contact in contacts | filter:query">
+                    {{contact.firstName}}
+                    {{contact.lastName}}
+                    <p>{{contact.phoneNumber}}</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
-        
