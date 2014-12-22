@@ -19,10 +19,10 @@
         </div>
         <div class="col-md-10">
 
-            <ul class="phones">
+            <ul class="contacts">
                 <li ng-repeat="contact in contacts | filter:query">
-                    {{contact.firstName}}
-                    {{contact.lastName}}
+                    <a href="#/contacts/{{contact.phoneNumber}}">{{contact.firstName}}</a>
+                    <a href="#/contacts/{{contact.phoneNumber}}">{{contact.lastName}}</a>
                     <p>{{contact.phoneNumber}}</p>
                 </li>
             </ul>
