@@ -21,8 +21,7 @@
 
             <ul class="contacts">
                 <li ng-repeat="contact in contacts | filter:query">
-                    <a href="#/contacts/{{contact.phoneNumber}}">{{contact.firstName}}</a>
-                    <a href="#/contacts/{{contact.phoneNumber}}">{{contact.lastName}}</a>
+                    <a href="#/contacts/{{contact.phoneNumber}}">{{contact.fullName}}</a>
                     <p>{{contact.phoneNumber}}</p>
                 </li>
             </ul>

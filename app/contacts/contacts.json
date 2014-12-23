@@ -1,17 +1,14 @@
 [
   {
-    "firstName": "Mattia",
-    "lastName": "Cappa",
+    "fullName": "Mattia Cappa",
     "phoneNumber": "+39 335 1411077"
   },
   {
-    "firstName": "Mattia",
-    "lastName": "Conversano",
+    "fullName": "Mattia Conversano",
     "phoneNumber": "+39 335 1234567"
   },
   {
-    "firstName": "Daniele",
-    "lastName": "Buratti",
+    "fullName": "Daniele Buratti",
     "phoneNumber": "+39 335 7654321"
   }
 ]
