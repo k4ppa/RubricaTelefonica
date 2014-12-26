@@ -6,29 +6,13 @@
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/app.css">
     <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/controller.js"></script>
 </head>
-<body ng-controller="ContactListCtrl">
+<body>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-2">
-
-            Search: <input ng-model="query">
-
-        </div>
-        <div class="col-md-10">
-
-            <ul class="contacts">
-                <li ng-repeat="contact in contacts | filter:query">
-                    <a href="#/contacts/{{contact.phoneNumber}}">{{contact.fullName}}</a>
-                    <p>{{contact.phoneNumber}}</p>
-                </li>
-            </ul>
-
-        </div>
-    </div>
-</div>
+<div ng-view></div>
 
 </body>
 </html>
