@@ -1,10 +1,8 @@
 var rubricaTelefonicaControllers = angular.module('rubricaTelefonicaControllers', []);
 
-rubricaTelefonicaControllers.controller('ContactListCtrl', ['$scope', '$http',
-    function ($scope, $http) {
-        $http.get('contacts/contacts.json').success(function (data) {
-            $scope.contacts = data;
-        });
+rubricaTelefonicaControllers.controller('ContactListCtrl', ['$scope', '$http', 'Contact',
+    function ($scope, $http, Contact) {
+        $scope.contacts = Contact.query();
     }]);
 
 rubricaTelefonicaControllers.controller('EditContactCtrl', ['$scope', '$routeParams',

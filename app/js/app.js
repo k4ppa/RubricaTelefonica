@@ -1,6 +1,7 @@
 var rubricaTelefonicaApp = angular.module('rubricaTelefonicaApp', [
     'ngRoute',
-    'rubricaTelefonicaControllers'
+    'rubricaTelefonicaControllers',
+    'rubricaTelefonicaServices'
 ]);
 
 rubricaTelefonicaApp.config(['$routeProvider',
