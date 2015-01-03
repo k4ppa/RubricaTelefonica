@@ -1,7 +1,7 @@
 var rubricaTelefonicaControllers = angular.module('rubricaTelefonicaControllers', []);
 
-rubricaTelefonicaControllers.controller('ContactListCtrl', ['$scope', '$http', 'Contact',
-    function ($scope, $http, Contact) {
+rubricaTelefonicaControllers.controller('ContactListCtrl', ['$scope', 'Contact',
+    function ($scope, Contact) {
         $scope.contacts = Contact.query();
     }]);
 
